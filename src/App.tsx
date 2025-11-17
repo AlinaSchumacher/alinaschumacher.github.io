@@ -1,25 +1,26 @@
 import "./App.css";
+import user from "./assets/idCard.json";
 import Avatar from "@mui/material/Avatar";
-import { Container, Paper, Stack, useTheme } from "@mui/material";
-
-const user = "Alina Schumacher";
+import { Container, Paper, Stack } from "@mui/material";
 
 function App() {
   return (
     <>
-      <Paper className="userCard" elevation={6}>
+      <Paper className="userCard" elevation={8}>
         <Stack direction={"row"} spacing={2} sx={{ alignItems: "center" }}>
           <Avatar
             className="avatar"
-            alt={user}
+            alt={user.name}
             src="/src/assets/20240104_115047.jpg"
             sx={{ height: 100, width: 100 }}
           >
             AS
           </Avatar>
           <Container>
-            <h1>{user}</h1>
-            <h2>Absolventin der FH Aachen</h2>
+            <h1>{user.name}</h1>
+            <h2>{user.description}</h2>
+            <h2>{user.email}</h2>
+            <h2>{user.mobile}</h2>
           </Container>
         </Stack>
       </Paper>
