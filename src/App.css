@@ -1,13 +1,17 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
   padding: 2rem;
   display: flex;
-  align-items: stretch;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .userCard {
   display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
   padding: 2rem;
+  width: 75vw;
 }
