@@ -5,6 +5,7 @@ import { StrictMode } from "react";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const theme = createTheme({
+  cssVariables: true,
   palette: {
     mode: "dark",
   },

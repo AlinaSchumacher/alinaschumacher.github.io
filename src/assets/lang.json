@@ -1,0 +1,10 @@
+{
+  "deutsch": {
+    "idCard": {
+      "mobile": "Handynummer",
+      "email": "E-Mail Adresse",
+      "ghub": "GitHub Link",
+      "glab": "GitLab Link"
+    }
+  }
+}
