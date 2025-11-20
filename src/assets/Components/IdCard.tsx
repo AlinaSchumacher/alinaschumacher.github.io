@@ -19,8 +19,8 @@ export function IdCard({ user }: { user: any }) {
           alt={user.name}
           src={"/src/assets/" + user.img}
           sx={{
-            height: { md: 200, lg: 300 },
-            width: { md: 200, lg: 300 },
+            height: { xs: 200, lg: 300 },
+            width: { xs: 200, lg: 300 },
           }}
         >
           AS
