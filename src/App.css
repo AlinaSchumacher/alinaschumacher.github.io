@@ -6,15 +6,3 @@
   justify-content: center;
   align-items: flex-start;
 }
-
-.userCard {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: stretch;
-  padding: 2rem;
-  width: 75vw;
-}
-
-.subtext {
-}
