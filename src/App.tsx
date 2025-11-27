@@ -1,8 +1,17 @@
 import "./App.css";
 import user from "./assets/idCard.json";
 import { IdCard } from "./assets/Components/IdCard";
+import { useScrollTrigger } from "@mui/material";
 
 function App() {
+  const scrolled = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 500,
+    target: document.getElementById("root"),
+  });
+
+  console.log(scrolled);
+
   var padding = "";
 
   for (let i = 0; i < 10; i++) {
@@ -12,8 +21,10 @@ function App() {
 
   return (
     <>
+      <div className="id">
+        <IdCard user={user} headerTrigger={scrolled} />
+      </div>
       <div className="scrollStart"></div>
-      <IdCard user={user} />
       <p className="content">{padding}</p>
     </>
   );

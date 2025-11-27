@@ -1,12 +1,29 @@
 import "./IdCard.css";
 import { Paper, Stack, Avatar, Container, Grid } from "@mui/material";
 
-export function IdCard({ user }: { user: any }) {
+export function IdCard({
+  user,
+  headerTrigger,
+}: {
+  user: any;
+  headerTrigger: boolean;
+}) {
   return (
     <Paper
       className="userCard"
       elevation={8}
-      sx={{ padding: { xs: "2rem", lg: "5rem" } }}
+      sx={{
+        padding: headerTrigger
+          ? { xs: "0 2rem", lg: "0 5rem" }
+          : { xs: "2rem", lg: "5rem" },
+        margin: headerTrigger
+          ? { xs: "0 2rem", lg: "0 5rem" }
+          : { xs: "2rem", lg: "5rem" },
+        width: headerTrigger ? "100vw" : "75vw",
+        minHeight: headerTrigger ? "5rem" : "90vh",
+        transition: headerTrigger ? "0.3s ease" : "0.5s ease",
+        borderRadius: headerTrigger ? 0 : 1,
+      }}
     >
       <Stack
         direction={{ sm: "row" }}
