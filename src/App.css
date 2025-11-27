@@ -1,9 +1,23 @@
 #root {
   /* max-width: 1280px; */
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  max-height: 100vh;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.scrollStart {
+  scroll-snap-align: start;
+}
+
+.content {
+  margin-top: 50vh;
+  scroll-margin: 2rem;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }

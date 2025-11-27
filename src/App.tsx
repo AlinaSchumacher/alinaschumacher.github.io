@@ -1,7 +1,6 @@
 import "./App.css";
 import user from "./assets/idCard.json";
-import { IdCard } from "./assets/Components/idCard";
-import { AppBar, Avatar, Toolbar, useScrollTrigger } from "@mui/material";
+import { IdCard } from "./assets/Components/IdCard";
 
 function App() {
   var padding = "";
@@ -13,15 +12,9 @@ function App() {
 
   return (
     <>
-      <AppBar position="sticky">
-        <Toolbar>
-          <Avatar alt={user.name} src={"/src/assets/" + user.img}>
-            AS
-          </Avatar>
-        </Toolbar>
-      </AppBar>
+      <div className="scrollStart"></div>
       <IdCard user={user} />
-      <p>{padding}</p>
+      <p className="content">{padding}</p>
     </>
   );
 }

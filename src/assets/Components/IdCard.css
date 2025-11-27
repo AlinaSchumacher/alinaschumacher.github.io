@@ -1,8 +1,10 @@
 .userCard {
+  top: 0;
+  position: sticky;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: stretch;
-  /* padding: 2rem; */
+  margin: 2rem;
   width: 75vw;
 }
