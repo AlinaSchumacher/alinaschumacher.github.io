@@ -1,7 +1,14 @@
 import "./App.css";
 import user from "./assets/idCard.json";
 import { IdCard } from "./assets/Components/IdCard";
-import { useScrollTrigger } from "@mui/material";
+import {
+  AppBar,
+  Avatar,
+  IconButton,
+  Slide,
+  Toolbar,
+  useScrollTrigger,
+} from "@mui/material";
 
 function App() {
   const scrolled = useScrollTrigger({
@@ -21,10 +28,25 @@ function App() {
 
   return (
     <>
-      <div className="id">
-        <IdCard user={user} headerTrigger={scrolled} />
-      </div>
-      <div className="scrollStart"></div>
+      <Slide in={scrolled} direction="down">
+        <AppBar>
+          <Toolbar>
+            <IconButton
+              onClick={() =>
+                // Scroll to the top
+                document
+                  .getElementsByClassName("userCard")[0]
+                  .scrollIntoView({ block: "start", behavior: "smooth" })
+              }
+            >
+              <Avatar alt={user.name} src={"/src/assets/" + user.img}>
+                AS
+              </Avatar>
+            </IconButton>
+          </Toolbar>
+        </AppBar>
+      </Slide>
+      <IdCard user={user} headerTrigger={scrolled} />
       <p className="content">{padding}</p>
     </>
   );

@@ -4,4 +4,6 @@
   justify-content: start;
   align-items: stretch;
   overflow: hidden;
+  scroll-margin: 2rem;
+  scroll-snap-align: start;
 }
