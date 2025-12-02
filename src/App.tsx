@@ -4,11 +4,14 @@ import { IdCard } from "./assets/Components/IdCard";
 import {
   AppBar,
   Avatar,
+  Box,
   IconButton,
   Slide,
   Toolbar,
+  Typography,
   useScrollTrigger,
 } from "@mui/material";
+import AbcIcon from "@mui/icons-material/Abc";
 
 function App() {
   const scrolled = useScrollTrigger({
@@ -42,6 +45,13 @@ function App() {
               <Avatar alt={user.name} src={"/src/assets/" + user.img}>
                 AS
               </Avatar>
+            </IconButton>
+            <Typography variant="h6" noWrap>
+              {user.name}
+            </Typography>
+            <Box flexGrow={1}></Box>
+            <IconButton>
+              <AbcIcon />
             </IconButton>
           </Toolbar>
         </AppBar>
