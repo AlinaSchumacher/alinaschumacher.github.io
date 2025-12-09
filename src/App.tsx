@@ -1,6 +1,7 @@
 import "./App.css";
 import user from "./assets/idCard.json";
 import { IdCard } from "./assets/Components/IdCard";
+import { MyTimeline } from "./assets/Components/MyTimeline";
 import {
   AppBar,
   Avatar,
@@ -19,8 +20,6 @@ function App() {
     threshold: 500,
     target: document.getElementById("root"),
   });
-
-  console.log(scrolled);
 
   var padding = "";
 
@@ -57,6 +56,7 @@ function App() {
         </AppBar>
       </Slide>
       <IdCard user={user} headerTrigger={scrolled} />
+      <MyTimeline />
       <p className="content">{padding}</p>
     </>
   );

@@ -1,0 +1,50 @@
+{
+  "0": {
+    "timestamp": "Aug 2018",
+    "icon": "School",
+    "title": "Abitur",
+    "subtitle": "Gymnasium Broich"
+  },
+  "1": {
+    "timestamp": "Sep 2018",
+    "icon": "Book",
+    "title": "RWTH Aachen",
+    "subtitle": "Informatik Studium"
+  },
+  "2": {
+    "timestamp": "Sep 2020",
+    "icon": "Book",
+    "title": "FH Aachen",
+    "subtitle": "Schulwechsel"
+  },
+  "3": {
+    "timestamp": "Sep 2025",
+    "icon": "School",
+    "title": "Bachelor of Science",
+    "subtitle": "Schwerpunkt: Autonome Systeme und Visual Computing"
+  },
+  "4": {
+    "timestamp": "2023/2024",
+    "icon": "Terminal",
+    "title": "Praktikum",
+    "subtitle": "Incoretex"
+  },
+  "5": {
+    "timestamp": "2022",
+    "icon": "Terminal",
+    "title": "Spiele-Entwicklung in Unity",
+    "subtitle": "Grafiken"
+  },
+  "6": {
+    "timestamp": "2023",
+    "icon": "Terminal",
+    "title": "Fahrgastinformationssystem",
+    "subtitle": "Frontend-Entwicklung: HTML/CSS/JS"
+  },
+  "7": {
+    "timestamp": "2024",
+    "icon": "Terminal",
+    "title": "Modellierung der Lenkung eines Mars Rovers",
+    "subtitle": "Model-based Systems Engineering"
+  }
+}
